@@ -23,3 +23,10 @@ public class NumberAnalyzerTest {
         assertEquals(4, NumberAnalyzer.countPrimes(10));
     }
 }
+
+@Test
+public void testEdgeCases() {
+    assertFalse(NumberAnalyzer.isPrime(0));
+    assertFalse(NumberAnalyzer.isPrime(-5));
+    assertTrue(NumberAnalyzer.isPrime(2));
+}
